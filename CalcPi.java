@@ -16,7 +16,7 @@ public class CalcPi {
 		denominator = (denominator + 2);
 	}
 // step 3: organizing and printing
-	System.out.println("Pi according to java: " + Math.PI);
-	System.out.println("Pi, approximated:     " + approxPi * 4);
+	System.out.println("pi according to java: " + Math.PI);
+	System.out.println("pi, approximated:     " + approxPi * 4);
 	}
 }
