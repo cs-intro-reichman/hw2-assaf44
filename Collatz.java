@@ -10,17 +10,23 @@ public class Collatz {
             int steps = 0;
 // step 3: mode v
             if (mode.equals("v")){
-                System.out.print(i + " ");
-                while (currentNumber != 1){
-                    steps++;
-                    if (currentNumber % 2 == 0){
-                        currentNumber = currentNumber / 2;
-                    } else{
-                        currentNumber = (currentNumber * 3) + 1;
-                    }
-                    System.out.print(currentNumber + " ");
+// special case: i == 1
+                if (i == 1){
+                    System.out.println ("1 4 2 1 (4)"); 
+                    continue;
                 }
-                System.out.println("(" + steps + ")");
+// all other cases
+                System.out.print(i + " ");
+                    while (currentNumber != 1){
+                        steps++;
+                        if (currentNumber % 2 == 0){
+                            currentNumber = currentNumber / 2;
+                        } else{
+                            currentNumber = (currentNumber * 3) + 1;
+                        }
+                        System.out.print(currentNumber + " ");
+                    }
+                    System.out.println("(" + steps + ")");
             }
 // step 4: mode c
             else if (mode.equals("c")){
@@ -34,7 +40,7 @@ public class Collatz {
                 }
             }
         }
-// stewp 5: mandatory printing
+// step 5: mandatory printing
         System.out.println("Every one of the first " + upperBound + " hailstone sequences reached 1.");
     }
 }
