@@ -17,7 +17,7 @@ public class Cheers {
                         System.out.println("Give me a  " + letter2 + ":" + " " + letter2 + "!");
                                 }
                 }
-        System.out.println("what does that spell?");
+        System.out.println("What does that spell?");
                                         for (int i = 0; i < times1; i++){
                                         System.out.println(name2 + "!!!");
                                         }
