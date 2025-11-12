@@ -26,9 +26,10 @@ public class TimeCalc {
         String printM;
             if (newMinutes == 0){
             printM = ("0" + printStringMinutes);
-            }
-                else{
-                printM = printStringMinutes;
+                }else if (newMinutes < 10){
+                        printM = ("0" + printStringMinutes);
+                }else{
+                        printM = printStringMinutes;
                 }
 // step 6: printing
         System.out.println(printH + ":" + printM);
