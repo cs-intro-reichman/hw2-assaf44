@@ -11,7 +11,7 @@ public class TimeCalc {
         int tempTime = ((hours * 60) + minutes + minutesToAddInt);
 // step 4: converting back to formal time
         int totalHours = (tempTime / 60);
-        int newHours = (totalHours % 12);
+        int newHours = (totalHours % 24);
         int newMinutes = (tempTime - (totalHours * 60));
 // step 5: attention to special cases
         String printStringHours = String.valueOf(newHours);
