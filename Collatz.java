@@ -7,7 +7,7 @@ public class Collatz {
 // step 2: loop until reaching 1
         for (int i = 1; i <= upperBound; i++){
             int currentNumber = i;
-            int steps = 0;
+            int steps = 1;
 // step 3: mode v
             if (mode.equals("v")){
 // special case: i == 1
