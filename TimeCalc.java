@@ -25,7 +25,7 @@ public class TimeCalc {
         String printStringMinutes = String.valueOf(newMinutes);
         String printM;
             if (newMinutes == 0){
-            printM = ("0" + printStringMinutes);
+            printM = ("00");
                 }else if (newMinutes < 10){
                         printM = ("0" + printStringMinutes);
                 }else{
